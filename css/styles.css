@@ -10,12 +10,14 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
   background-color: #f5f3f7;
+  line-height: 1.4; }
+
+.content-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10rem;
-  line-height: 1.4; }
+  gap: 10rem; }
 
 .mobile {
   margin-top: 5rem;
@@ -127,6 +129,10 @@ body {
 form {
   display: inline-flex;
   margin-top: 1.3rem; }
+  form input,
+  form select,
+  form textarea {
+    font-size: 16px; }
   form input {
     width: 100%;
     padding: 1.5rem 2.5rem;
@@ -162,8 +168,8 @@ aside {
     line-height: 1.5;
     line-height: 1.7; }
 
-@media only screen and (min-width: 970px) {
-  body {
+@media only screen and (min-width: 850px) {
+  .content-body {
     display: flex;
     flex-direction: row;
     align-content: center;

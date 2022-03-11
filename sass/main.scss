@@ -14,15 +14,16 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: $default-font-size;
   background-color: $light-grayish-violet;
+  line-height: 1.4;
+}
 
+.content-body {
   display: flex;
   flex-direction: column;
   // align-content: center;
   align-items: center;
   justify-content: center;
   gap: 10rem;
-  line-height: 1.4;
-
 }
 
 .mobile {
@@ -44,7 +45,6 @@ body {
   height: 9rem;
   position: relative;
   box-shadow: -1px 4px 20px 6px #e2dddd;
-
 
   &::before {
     content: "";
@@ -68,8 +68,8 @@ body {
     margin-left: 2rem;
     // margin-top: 2r;
     color: $white;
- 
-    h2{
+
+    h2 {
       font-size: 2rem;
     }
     p {
@@ -102,7 +102,6 @@ body {
       color: $moderate-violet;
     }
   }
-
 }
 
 .reply {
@@ -182,6 +181,12 @@ form {
   display: inline-flex;
   margin-top: 1.3rem;
 
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
   input {
     width: 100%;
     padding: 1.5rem 2.5rem;
@@ -212,9 +217,9 @@ aside {
   max-width: 80%;
   display: flex;
   flex-direction: column;
-//  justify-content: center;
- text-align: center;
- margin-bottom: 7rem;
+  //  justify-content: center;
+  text-align: center;
+  margin-bottom: 7rem;
 
   h2 {
     color: $very-dark-desaturated-violet;
@@ -230,24 +235,18 @@ aside {
   }
 }
 
-@media only screen and (min-width: 970px) {
-  body {
+@media only screen and (min-width: 850px) {
+  .content-body {
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: center;
     gap: 10rem;
-
   }
 
-  aside{
+  aside {
     max-width: 30%;
     text-align: initial;
-    margin-bottom: initial
+    margin-bottom: initial;
   }
-
- 
-
-
- 
 }
